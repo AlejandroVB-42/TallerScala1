@@ -4,7 +4,7 @@ package object Multiplicacion {
       if (a % 2 != 0) b + PeasantAlgorithm(a / 2, b + b) else PeasantAlgorithm(a / 2, b + b)
     }
   }
-    
+
 }
 
 def PeasantAlgorithmIT(a: Int, b: Int): Int = {
@@ -13,8 +13,8 @@ def PeasantAlgorithmIT(a: Int, b: Int): Int = {
     else {
       if (a % 2 != 0) auxIter(a / 2, b + b, accumulator + b)
       else auxIter(a / 2, b + b, accumulator)
+    }
   }
-}
   auxIter(a, b, 0)
 }
 
