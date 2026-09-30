@@ -11,9 +11,9 @@ package object Multiplicacion {
     }
   }
     
-}
 
-def PeasantAlgorithmIt(a: Int, b: Int): Int = {
+
+  def PeasantAlgorithmIt(a: Int, b: Int): Int = {
   def auxIter(a: Int, b: Int, accumulator: Int): Int = {
     // Nuestro Caso base aqui es Cuando 'a' llega a 0, retornamos directamente el valor acumulado
     if (a == 0) accumulator
@@ -30,7 +30,7 @@ def PeasantAlgorithmIt(a: Int, b: Int): Int = {
 
 
 
-def splitMultiply(a: Int, b: Int): Int = {
+  def splitMultiply(a: Int, b: Int): Int = {
   // numDigits en nuestro programa es una función auxiliar para contar los digitos de un numero
   def numDigits(n: Int): Int = {
     if (n < 10) 1 else 1 + numDigits(n / 10)
@@ -61,7 +61,7 @@ def splitMultiply(a: Int, b: Int): Int = {
 
 }
 
-def fastMultiply(a: Int, b: Int): Int = {
+  def fastMultiply(a: Int, b: Int): Int = {
   // numDigits en nuestro programa es una función auxiliar para contar los digitos de un numero
   def numDigits(n: Int): Int = {
     if (n < 10) 1 else 1 + numDigits(n / 10)
@@ -92,6 +92,8 @@ def fastMultiply(a: Int, b: Int): Int = {
     (xz * math.pow(10,  m+m).toInt) + (centralTerm * math.pow(10, m).toInt) + yw
   }
 
+}
+  
 }
 
 
